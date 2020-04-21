@@ -19,14 +19,17 @@ let todos = [
 ];
 
 function renderTodoApp() {
-    let app = document.querySelector("#app")
-    let h1 = document.createElement("h1")
-    // your code here
+    let app = document.querySelector("#app");
+    let items = "";
+    todos.forEach(function (todo) {
+      items += `<li class="items"><input class="check" ${
+        todo.completed ? "checked='checked'" : ""
+      } type="checkbox">${todo.description}</li>`;
+    });
+  
+    app.innerHTML = `<h1> Todo List </h2>
+  <ul class="list">${items}</ul>`;
+  
 
-    h1.innerText = "Todo List"
-
-    app.appendChild(h1)
-    // and maybe some here
 }
-
-renderTodoApp()
+renderTodoApp();

@@ -17,7 +17,13 @@ let todos = [
         description: "Call the caterers"
     }
 ];
+function addToDo() {
+  let val = document.getElementById("todo-input").value;
+  let newObj = {completed:false, description: val};
+  todo = todos.unshift(newObj);
 
+  renderTodoApp();
+}
 function renderTodoApp() {
     let app = document.querySelector("#app");
     let items = "";
@@ -28,7 +34,7 @@ function renderTodoApp() {
     });
   
     app.innerHTML = `<h1> Todo List </h2>
-  <ul class="list">${items}</ul>`;
+       <ul class= "list" id= "items"> ${items}</ul>`;
   
 
 }

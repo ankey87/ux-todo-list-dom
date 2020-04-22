@@ -1,4 +1,87 @@
 body {
-    font-family: sans-serif;
+    margin: 0;
+    padding:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
-  
+  h1 {
+    margin: 10px;
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 18px 18px 18px 18px;
+  }
+  .form{
+    width: 500px;
+    position: relative;
+    margin: auto;
+    top: 30px;
+    box-shadow: 0 3px 9px 0 rgba(0,0,0,0.4), 0 8px 25pc 0 rgba(0,0,0,0.22);
+    border-radius: 6px;
+  }
+  .list{
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .check{
+    margin-right: 12px;
+  }
+  .button {
+    background-color: transparent;
+    width: 125px;
+    color: rgb(62, 104, 42);
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 22px;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid rgba(62, 104, 42);
+  }
+  .button:hover{
+    background-color: rgb(62, 104, 42);
+    color: papayawhip;
+  }
+  .input-text{
+    height: 28px;
+    width: 210px;
+    font-size: 1.2rem;
+  }
+  .header{
+    background:url(https://picsum.photos/id/1013/175/100);
+    background-size: cover;
+    border-radius: 4px 4px 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 275px;
+    width: 500px;
+  }
+  .todo-form{
+    text-align: center;
+    padding: 20px;
+    background-color: papayawhip;
+  }
+  .text{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(62, 104, 42);
+    height: 25px;
+    width: 220px;
+  }
+  .text::placeholder{
+    padding-left: 5px;
+  }
+  .app h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: rgb(62, 104, 42);
+  }
+  .list{
+    padding: 20px;
+    overflow-y: scroll;
+    height: 110px;
+    color: rgb(62, 104, 42);
+  }

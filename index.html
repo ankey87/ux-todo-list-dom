@@ -4,11 +4,24 @@
 <head>
     <title>Todo List</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/styles.css">
 </head>
 
 <body>
-    <div id="app"></div>
+    <div class="container">
+        <div class="form">
+            <header class="header"></header>
+            <form id="todo-form" class="todo-form">
+                <input type="text" id="todo-input" class="text" placeholder="Add a todo" />
+                <button class="button" type="button" onclick="addToDo()">
+                    Add to List
+                </button>
+            </form>
+            <div id="app">
+            </div>
+        </div>
+    </div>
+
 
     <script src="src/index.js">
     </script>
